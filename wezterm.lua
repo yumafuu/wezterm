@@ -5,7 +5,7 @@ return {
   color_scheme = "Teerb",
 
   window_decorations = "RESIZE",
-  font_size = 13.0,
+  font_size = 16.0,
   use_ime = true,
   window_background_opacity = 0.9,
   use_fancy_tab_bar = false,
