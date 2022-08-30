@@ -23,16 +23,8 @@ return {
     -----------------------
     --  PANE
     -----------------------
-    {
-      key = 'v',
-      mods = 'LEADER',
-      action = act.SplitHorizontal { domain = 'CurrentPaneDomain' },
-    },
-    {
-      key = 's',
-      mods = 'LEADER',
-      action = act.SplitVertical { domain = 'CurrentPaneDomain' },
-    },
+    { key = 'v', mods = 'LEADER', action = act.SplitHorizontal { domain = 'CurrentPaneDomain' } },
+    { key = 's', mods = 'LEADER', action = act.SplitVertical { domain = 'CurrentPaneDomain' } },
     { key = 'l', mods = 'LEADER', action = act.ActivatePaneDirection 'Right' },
     { key = 'h', mods = 'LEADER', action = act.ActivatePaneDirection 'Left' },
     { key = 'j', mods = 'LEADER', action = act.ActivatePaneDirection 'Down' },
@@ -45,11 +37,7 @@ return {
     -----------------------
     --  TAB
     -----------------------
-    {
-      key = 'c',
-      mods = 'LEADER',
-      action = act.SpawnTab 'CurrentPaneDomain',
-    },
+    { key = 'c', mods = 'LEADER', action = act.SpawnTab 'CurrentPaneDomain' },
     { key = 'n', mods = 'LEADER', action = act.ActivateTabRelative(1) },
     { key = 'p', mods = 'LEADER', action = act.ActivateTabRelative(-1) },
     { key = 'LeftArrow', mods = 'SHIFT', action = act.AdjustPaneSize {"Left", 2} },
