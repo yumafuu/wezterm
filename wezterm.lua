@@ -7,6 +7,7 @@ return {
   window_decorations           = "RESIZE",
   font_size                    = 16.0,
   use_ime                      = true,
+  harfbuzz_features            = { 'calt=0', 'clig=0', 'liga=0' },
   window_background_opacity    = 0.9,
   use_fancy_tab_bar            = false,
   tab_bar_at_bottom            = true,
@@ -19,6 +20,7 @@ return {
     -----------------------
     { key = 'c', mods = 'CMD', action = act.Copy },
     { key = 'v', mods = 'CMD', action = act.Paste },
+    { key = '/', mods = 'CTRL', action = act.QuickSelect },
 
     -----------------------
     --  PANE
